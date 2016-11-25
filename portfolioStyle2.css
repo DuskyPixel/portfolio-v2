@@ -1,0 +1,310 @@
+html, body{
+  height: 100%;
+}
+/* remove things from this */
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  transition: all .3s ease;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  margin: 0;
+
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+a{
+	color: skyblue;
+	font-weight: bold;
+}
+a:hover{
+	color: white;
+	background: rgba(0,0,0,0) !important;
+}
+
+#logoText:hover{
+  color: deepskyblue ;
+}
+
+
+
+.navbar{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	border-bottom: 0;
+	transition: all .7s ease;
+}
+.navbar-scrolled{
+	background: #031021;
+}
+.navbar-scrolled a:hover, .navbar-scrolled a:focus{
+	background: #0B213F !important;
+}
+
+
+#logoImg{
+  width: 40px;
+  height: 40px;
+  margin-left: -10px;
+  margin-top: -10px;
+  float: left;
+
+}
+h3{
+  margin-top: -4px;
+  margin-left: 35px;
+  text-transform: bold;
+  
+  font-weight: 900;
+}
+
+#bigTopImage{
+  width: 100%;
+
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("sample4.png");
+}
+
+#emptyMiddleBGSpacing{
+  width: 100%;
+  min-height: 15px;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("sample4.png");
+}
+
+@media only screen and (max-width : 768px) {
+	.navbar{
+		background: #031021;
+	}
+	button.navbar-toggle{
+		background: #1F3B60;
+	}
+	span.icon-bar{
+		background: skyblue;
+	}
+	#wrapper{
+		width: 100%;
+	}
+
+	.navbar-collapse li a { text-align: center; font-size: 1.8em; }
+}
+
+
+
+
+
+.container-fluid,.container, .row, .row[class*="col"]{
+  max-width: 100%;
+  margin: 0;
+}
+
+
+.row h2{
+  font-weight: 900;
+  text-align: center;
+  color: #031021;
+
+}
+
+hr{
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border: 1px solid #3B5982;
+}
+
+
+
+
+
+
+
+
+
+.baseCard{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: all 0.35s ease;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #246;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.baseCard, .baseCard *{
+  box-sizing: border-box;
+}
+.baseCard a{
+  color: #333;
+}
+.baseCard img{
+  width: 100%;
+  height: 100%;
+}
+
+.baseCard-info{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  left:0%;
+   top:50%;
+  transform: translate(0, -50%);
+  backface-visibility: hidden;
+  background: rgba(11, 33, 63, 0.0);
+  opacity: 1;
+  transition: all 0.35s ease;
+
+}
+
+.baseCard-info h3{
+  background: rgba(3, 16, 33, 0.7);
+
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+
+  margin: 30px 0 0 0;
+  transition: all 0.35s ease;
+}
+
+.baseCard-info p{
+  font-size: 12px;
+  position: relative;
+  color: #eee;
+  padding: 40px 20px 20px;
+  text-align: center;
+  opacity: 0;
+
+  transition: all 0.35s 0.1s ease;
+}
+
+
+.baseCard .img{
+  transition: all 0.35s ease;
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+.baseCard a:hover .img{
+  transform: scale(1, .7);
+  transform: translateY(15%);
+  filter: grayscale(.6);
+  opacity: .8;
+}
+
+.baseCard a:hover .baseCard-info{
+  visibility: visible;
+  opacity: 1;
+  background: rgba(11, 33, 63, 0.75);
+    left:0%;
+   top:0%;
+  transform: translate(0, 0%);
+}
+
+.baseCard a:hover .baseCard-info h3{
+  transform: translateY(-80%);
+  color: skyblue;
+}
+
+.baseCard a:hover .baseCard-info p{
+  opacity: 1;
+  transform: translateY(-60%);
+}
+
+
+
+
+
+
+
+
+.sectionDark{
+  background: #1F3B60;
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 0 0 20px #031021;
+  border-top: 2px solid #031021;
+  border-bottom: 2px solid #031021;
+  padding-top:40px;
+}
+
+.sectionLight{
+  background: #3B5982;
+  
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 0 0 20px #031021;
+  border-top: 2px solid #031021;
+  border-bottom: 2px solid #031021;
+  padding-top:40px;
+
+}
+
+#formTitle{
+  text-align: center;
+  color: #031021;
+}
+.sectionLight p{
+  color: #0B213F;
+}
+
+
+.fa{
+  font-size: 2em;
+}
+form{
+  color: #F2F5F9;
+}
+.form-control{
+
+  color: 031021;
+}
+.form-control:focus{
+  text-align: center;
+  margin: 0 auto;
+  background: skyblue;
+}
+
+.btn-default{
+  background: #1F3B60;
+  color: #B8C7DD;
+  border: 1px solid #031021;
+}
+.btn-default:hover{
+  background: skyblue;
+  color: #031021;
+}
+
+footer{
+  background: #031021;
+  height: 25px;
+  display: block;
+}
+
